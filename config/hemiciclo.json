@@ -1,0 +1,31 @@
+{
+  "legislatura": "XV",
+  "nota": "Hemiciclo esquemático: tres bloques separados por dos pasillos, 10 filas. Los grupos se colocan de izquierda a derecha en este orden, llenando cada columna de la fila de abajo a la de arriba.",
+  "geometria": {
+    "filas": 10,
+    "radio_interior": 380,
+    "radio_exterior": 880,
+    "pasillo_grados": 2.6,
+    "sectores": [
+      130,
+      90,
+      130
+    ]
+  },
+  "orden": [
+    "PSOE",
+    "SUMAR",
+    "EH Bildu",
+    "PNV",
+    "ERC",
+    "Junts",
+    "Mixto",
+    "VOX",
+    "PP"
+  ],
+  "grupos_pequenos": {
+    "max_escanos": 10,
+    "columnas": 1,
+    "nota": "Los grupos consecutivos con 10 escaños o menos comparten su hueco y se apilan por capas: se llena fila a fila, de abajo arriba y de izquierda a derecha (EH Bildu abajo, luego PNV, ERC, Junts y Mixto)."
+  }
+}

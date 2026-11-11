@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Plantilla de votación · CONGRESO para todos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Plus+Jakarta+Sans:wght@800&display=block" rel="stylesheet">
+<style>
+  :root {
+    --petroleo: #1F4E5F; --crema: #FAF6EE; --tinta: #1C1C1C; --melocoton: #F2A477; --niebla: #DDE3E6;
+    /* Excepción aprobada: solo para la etiqueta del resultado */
+    --aprobada: #2E7D32; --rechazada: #C62828;
+    --titulos: 'Plus Jakarta Sans', Arial, sans-serif;
+    --texto: 'Atkinson Hyperlegible', Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #888; }
+  .lienzo {
+    height: 1350px; padding: 72px 80px 64px; display: flex; flex-direction: column; overflow: hidden; position: relative;
+    font-family: var(--texto); color: var(--tinta); background: var(--crema);
+  }
+  #lienzo { width: 1080px; }
+  #doble { width: 2160px; display: none; }
+
+  .cabecera { display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 18px; }
+  .logo svg { width: 64px; height: 64px; }
+  .logo-inst { font-family: var(--titulos); font-weight: 800; font-size: 36px; color: var(--petroleo); line-height: 1; }
+  .logo-para { font-size: 26px; line-height: 1; margin-top: 4px; }
+  .fecha { font-size: 28px; font-weight: 700; color: var(--petroleo); }
+  .titulo { font-family: var(--titulos); font-weight: 800; font-size: 64px; line-height: 1.05; color: var(--petroleo); margin-top: 36px; letter-spacing: -0.5px; }
+  .tema { font-size: 36px; line-height: 1.3; margin-top: 14px; }
+
+  /* Etiqueta del resultado (igual en las dos infografías) */
+  .etiqueta { display: inline-flex; align-items: center; gap: 12px; color: #fff; font-weight: 700; font-size: 32px; padding: 12px 26px; border-radius: 24px; background: var(--aprobada); }
+  .etiqueta.rechazada { background: var(--rechazada); }
+
+  .global { margin-top: 28px; }
+  .global-fila { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+  .cifras { font-size: 30px; font-weight: 700; }
+  .barra-total { position: relative; height: 44px; border-radius: 22px; overflow: hidden; display: flex; outline: 3px solid var(--petroleo); outline-offset: -3px; }
+  .marca-mayoria { position: absolute; top: -10px; bottom: -10px; width: 4px; background: var(--tinta); }
+  .nota-mayoria { font-size: 26px; margin-top: 10px; text-align: right; }
+
+  .si { background: var(--petroleo); }
+  .no { background: var(--melocoton); }
+  .abs { background: repeating-linear-gradient(135deg, var(--niebla) 0 8px, #B9C4C9 8px 12px); }
+  .nv { background: var(--crema); }
+
+  /* Tabla por grupos */
+  .tabla { margin-top: 22px; display: flex; flex-direction: column; }
+  .cab-tabla, .fila { display: grid; grid-template-columns: 230px 1fr 78px 78px 78px 92px; align-items: center; column-gap: 14px; }
+  .cab-tabla { font-size: 26px; font-weight: 700; color: var(--petroleo); padding-bottom: 10px; border-bottom: 3px solid var(--niebla); white-space: nowrap; }
+  .cab-tabla span { text-align: center; }
+  .cab-tabla .reg { font-weight: 400; }
+  .fila { height: 44px; border-bottom: 2px solid var(--niebla); }
+  .fila.sub { height: 34px; }
+  .fila.sub .nombre { font-size: 26px; padding-left: 26px; font-weight: 400; }
+  .fila.sub .barra { height: 18px; }
+  .fila.sub .num { font-size: 26px; }
+  .nombre { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 30px; white-space: nowrap; }
+  .nombre small { font-weight: 400; font-size: 24px; opacity: .75; }
+  .chip { width: 22px; height: 22px; border-radius: 6px; flex: none; display: inline-block; }
+  .barra { height: 26px; border-radius: 13px; overflow: hidden; display: flex; outline: 2px solid var(--petroleo); outline-offset: -2px; }
+  .num { text-align: center; font-size: 30px; font-weight: 700; }
+  .num.cero { opacity: .25; font-weight: 400; }
+  .leyenda { display: flex; gap: 30px; margin-top: 16px; font-size: 26px; flex-wrap: wrap; }
+  .leyenda span { display: inline-flex; align-items: center; gap: 10px; }
+  .muestra { width: 30px; height: 22px; border-radius: 6px; outline: 2px solid var(--petroleo); outline-offset: -2px; }
+
+  /* Votación sin detalle por grupos (secreta o por asentimiento) */
+  .aviso { margin-top: 26px; background: var(--niebla); border-radius: 24px; padding: 22px 28px; font-size: 30px; line-height: 1.35; display: flex; gap: 18px; align-items: flex-start; }
+  .aviso svg { flex: none; margin-top: 2px; }
+  .cuadricula { margin-top: 30px; }
+  .totales-fila { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 26px; }
+  .totales-fila .tot { justify-content: center; }
+  .pie { margin-top: auto; padding-top: 18px; display: flex; justify-content: space-between; font-size: 24px; color: var(--petroleo); border-top: 3px solid var(--niebla); }
+  .sello { position: absolute; top: 0; left: 0; right: 0; text-align: center; background: var(--tinta); color: var(--crema); font-weight: 700; font-size: 22px; padding: 6px 0; letter-spacing: 1px; z-index: 5; }
+
+  /* Hemiciclo en dos imágenes (lienzo de 2160 px que se corta por la mitad) */
+  #doble { padding: 0; display: none; }
+  #doble .capa { position: absolute; inset: 0; }
+  .izq { position: absolute; left: 80px; top: 72px; width: 920px; }
+  .izq .tema { max-width: 660px; }
+  .izq .etiqueta { margin-top: 26px; font-size: 42px; padding: 16px 34px; border-radius: 28px; gap: 14px; }
+  .der { position: absolute; right: 80px; top: 78px; }
+  .der-grupos { display: grid; grid-template-columns: repeat(3, auto); gap: 16px 48px; font-size: 30px; margin-top: 22px; }
+  .der-grupos div { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+  .der-grupos .chip { width: 28px; height: 28px; border-radius: 8px; }
+  .der-grupos b { font-weight: 700; }
+  .der-titulo { font-size: 26px; font-weight: 700; color: var(--petroleo); }
+  .totales { position: absolute; top: 1000px; display: flex; flex-direction: column; gap: 26px; }
+  .totales.t-izq { right: 1116px; align-items: flex-end; } .totales.t-der { left: 1116px; align-items: flex-start; }
+  .tot { display: flex; align-items: center; gap: 14px; }
+  .tot.tot-i { text-align: right; }
+  .tot b { font-size: 40px; line-height: 1; display: block; } .tot span { font-size: 26px; display: block; }
+  .pie-izq, .pie-der { position: absolute; bottom: 40px; font-size: 24px; color: var(--petroleo); }
+  .pie-izq { left: 80px; } .pie-der { right: 80px; }
+</style>
+</head>
+<body>
+<div id="lienzo" class="lienzo"></div>
+<div id="doble" class="lienzo"></div>
+<script>
+const VOTOS = [
+  { k: 'si', txt: 'Sí', icono: '✓' },
+  { k: 'no', txt: 'No', icono: '✕' },
+  { k: 'abs', txt: 'Abstención', icono: '–' },
+  { k: 'nv', txt: 'No vota', icono: '' },
+];
+const LOGO = `<svg viewBox="0 0 64 64"><path d="M10 8h44a8 8 0 0 1 8 8v24a8 8 0 0 1-8 8H26l-12 10v-10h-4a8 8 0 0 1-8-8V16a8 8 0 0 1 8-8z" fill="#1F4E5F"/><circle cx="44" cy="28" r="6" fill="#F2A477"/></svg>`;
+const cabecera = (d) => `
+  <div class="cabecera">
+    <div class="logo">${LOGO}<div><div class="logo-inst">CONGRESO</div><div class="logo-para">para todos</div></div></div>
+    <div class="fecha">${d.fecha}</div>
+  </div>`;
+const etiqueta = (d) => `<span class="etiqueta ${d.resultado === 'Rechazada' ? 'rechazada' : ''}">${d.resultado === 'Rechazada' ? '✕' : '✓'} ${d.resultado}</span>`;
+const sello = (d) => (d.ejemplo ? `<div class="sello">${d.sello || 'EJEMPLO · DATOS FICTICIOS'}</div>` : '');
+
+function barraSegmentos(v, total) {
+  return VOTOS.filter((x) => v[x.k] > 0).map((x) => `<div class="${x.k}" style="width:${(100 * v[x.k]) / total}%"></div>`).join('');
+}
+
+// ---------- Infografía 1: por grupos ----------
+function pintarGrupos(d) {
+  document.getElementById('doble').style.display = 'none';
+  const lz = document.getElementById('lienzo'); lz.style.display = 'flex';
+  const t = d.totales, total = t.si + t.no + t.abs + t.nv;
+  const pos = (100 * d.mayoria.umbral) / total;
+  const nums = (v) => VOTOS.map((x) => `<span class="num ${v[x.k] ? '' : 'cero'}">${v[x.k] || '·'}</span>`).join('');
+  const filas = d.grupos.map((g) => {
+    let html = `<div class="fila"><span class="nombre"><i class="chip" style="background:${g.color}"></i>${g.corto} <small>${g.escanos}</small></span><div class="barra">${barraSegmentos(g.votos, g.escanos)}</div>${nums(g.votos)}</div>`;
+    if (g.partidos) html += g.partidos.map((p) => `<div class="fila sub"><span class="nombre"><i class="chip" style="background:${p.color};width:16px;height:16px"></i>${p.corto} <small>${p.escanos}</small></span><div class="barra">${barraSegmentos(p.votos, p.escanos)}</div>${nums(p.votos)}</div>`).join('');
+    return html;
+  }).join('');
+  lz.innerHTML = `
+    ${cabecera(d)}${sello(d)}
+    <div class="titulo">¿Qué ha votado cada grupo?</div>
+    <div class="tema">${d.tema}</div>
+    <div class="global">
+      <div class="global-fila">${etiqueta(d)}<span class="cifras">${t.si} sí · ${t.no} no · ${t.abs} abst. · ${t.nv} no votan</span></div>
+      <div class="barra-total">${barraSegmentos(t, total)}<div class="marca-mayoria" style="left:calc(${pos}% - 2px)"></div></div>
+      <div class="nota-mayoria">${d.mayoria.texto}</div>
+    </div>
+    <div class="tabla">
+      <div class="cab-tabla"><span style="text-align:left">Grupo<span class="reg"> · escaños</span></span><span>Reparto del voto</span><span>Sí</span><span>No</span><span>Abst.</span><span>No vota</span></div>
+      ${filas}
+    </div>
+    <div class="leyenda">${VOTOS.map((x) => `<span><i class="muestra ${x.k}"></i>${x.icono ? x.icono + ' ' : ''}${x.txt}</span>`).join('')}</div>
+    <div class="pie"><span>Fuente: congreso.es · ${d.referencia}</span><span>Divulgación independiente, no oficial</span></div>`;
+}
+
+// ---------- Infografía 2: hemiciclo en dos imágenes ----------
+// Geometría: filas concéntricas en tres bloques (izquierda, centro y derecha) separados por pasillos.
+// Cada escaño tiene su celda (trozo de corona), que se tiñe con el color del grupo.
+function construirEscanos(geo, cx, cy) {
+  const { filas, radio_interior: rI, radio_exterior: rE, pasillo_grados, sectores } = geo;
+  const total = sectores.reduce((a, b) => a + b, 0);
+  const pas = (pasillo_grados * Math.PI) / 180;
+  const util = Math.PI - pas * (sectores.length - 1);
+  const dr = (rE - rI) / (filas - 1);
+  const radios = Array.from({ length: filas }, (_, i) => rI + dr * i);
+  const sumaR = radios.reduce((a, b) => a + b, 0);
+  const lista = [];
+  let angIni = Math.PI; // de izquierda (π) a derecha (0)
+  sectores.forEach((T, s) => {
+    const ancho = (util * T) / total;
+    const n = radios.map((r) => Math.round((T * r) / sumaR));
+    let dif = T - n.reduce((a, b) => a + b, 0);
+    for (let i = filas - 1; dif !== 0; i = (i - 1 + filas) % filas) { n[i] += Math.sign(dif); dif -= Math.sign(dif); }
+    radios.forEach((r, f) => {
+      const paso = ancho / n[f];
+      for (let j = 0; j < n[f]; j++) {
+        const a0 = angIni - paso * j, a1 = a0 - paso, ang = (a0 + a1) / 2;
+        lista.push({ s, f, r, ang, a0, a1, r0: r - dr / 2, r1: r + dr / 2, x: cx + r * Math.cos(ang), y: cy - r * Math.sin(ang) });
+      }
+    });
+    angIni -= ancho + pas;
+  });
+  return { lista, dr };
+}
+
+// Orden de llenado: de izquierda a derecha; en cada columna, de la fila de abajo a la de arriba
+const ordenEscanos = (a, b) => b.ang - a.ang || a.f - b.f;
+
+function celda(cx, cy, e) {
+  const p = (r, a) => `${cx + r * Math.cos(a)} ${cy - r * Math.sin(a)}`;
+  return `M${p(e.r0, e.a0)} L${p(e.r1, e.a0)} A${e.r1} ${e.r1} 0 0 1 ${p(e.r1, e.a1)} L${p(e.r0, e.a1)} A${e.r0} ${e.r0} 0 0 0 ${p(e.r0, e.a0)} Z`;
+}
+
+function icono(k, cx, cy, rad, color) {
+  const s = rad * 0.48, w = Math.max(2.6, rad * 0.15);
+  if (k === 'nv') return `<circle cx="${cx}" cy="${cy}" r="${rad}" fill="none" stroke="${color}" stroke-width="${w * 0.8}" stroke-dasharray="${w * 1.2} ${w * 1.2}" opacity=".7"/>`;
+  let h = `<circle cx="${cx}" cy="${cy}" r="${rad}" fill="#FAF6EE" fill-opacity=".35" stroke="${color}" stroke-width="${w}"/>`;
+  if (k === 'si') h += `<path d="M${cx - s} ${cy + s * 0.05} l${s * 0.7} ${s * 0.7} l${s * 1.3} -${s * 1.4}" stroke="${color}" stroke-width="${w * 1.15}" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+  if (k === 'no') h += `<path d="M${cx - s * 0.8} ${cy - s * 0.8} L${cx + s * 0.8} ${cy + s * 0.8} M${cx + s * 0.8} ${cy - s * 0.8} L${cx - s * 0.8} ${cy + s * 0.8}" stroke="${color}" stroke-width="${w * 1.15}" stroke-linecap="round"/>`;
+  if (k === 'abs') h += `<path d="M${cx - s} ${cy} L${cx + s} ${cy}" stroke="${color}" stroke-width="${w * 1.25}" stroke-linecap="round"/>`;
+  return h;
+}
+
+function pintarHemicicloDoble(d, plano) {
+  document.getElementById('lienzo').style.display = 'none';
+  const lz = document.getElementById('doble'); lz.style.display = 'block';
+  const W = 2160, H = 1350, cx = 1080, cy = 1228;
+  const { lista, dr } = construirEscanos(plano.geometria, cx, cy);
+  const escanos = [...lista].sort(ordenEscanos);
+  const porNombre = Object.fromEntries(d.grupos.map((g) => [g.corto, g]));
+  const total = d.grupos.reduce((a, g) => a + g.escanos, 0);
+  if (total !== escanos.length) throw new Error(`Hay ${total} diputados y ${escanos.length} escaños en el plano`);
+  const orden = [...plano.orden, ...d.grupos.map((g) => g.corto).filter((n) => !plano.orden.includes(n))];
+  const votosOrden = ['si', 'abs', 'no', 'nv'];
+  // Tramos: cada grupo grande es un tramo; los grupos pequeños consecutivos forman un tramo común
+  const gp = plano.grupos_pequenos || { max_escanos: 0, bandas: 1 };
+  const nfilas = plano.geometria.filas;
+  const tramos = [];
+  orden.map((n) => porNombre[n]).filter(Boolean).forEach((g) => {
+    const peq = g.escanos <= gp.max_escanos;
+    const ult = tramos[tramos.length - 1];
+    if (peq && ult && ult.peq) ult.grupos.push(g); else tramos.push({ peq, grupos: [g] });
+  });
+  let i = 0;
+  tramos.forEach((tr) => {
+    const n = tr.grupos.reduce((a, g) => a + g.escanos, 0);
+    let sitios = escanos.slice(i, i + n); i += n;
+    if (tr.peq && tr.grupos.length > 1) {
+      // Bloques compactos: bandas de filas, de abajo arriba; en cada banda, de izquierda a derecha
+      // Posición relativa dentro de su fila (0 = izquierda, 1 = derecha): el hueco pasa a ser un rectángulo
+      const porFila = {};
+      sitios.forEach((e) => (porFila[e.f] ||= []).push(e));
+      Object.values(porFila).forEach((fila) => fila.sort((a, b) => b.ang - a.ang).forEach((e, k) => (e.u = (k + 0.5) / fila.length)));
+      // Columnas (por posición relativa en la fila) recorridas en zigzag: la primera de abajo arriba,
+      // la siguiente de arriba abajo... Cada grupo queda apilado sobre el anterior, en bloque.
+      const nc = gp.columnas || 2;
+      const columna = (e) => Math.min(nc - 1, Math.floor(e.u * nc));
+      sitios = [...sitios].sort((a, b) => {
+        const ca = columna(a), cb = columna(b);
+        if (ca !== cb) return ca - cb;
+        const dir = ca % 2 === 0 ? 1 : -1;
+        return dir * (a.f - b.f) || a.u - b.u;
+      });
+    }
+    let k0 = 0;
+    tr.grupos.forEach((g) => {
+      const suyos = sitios.slice(k0, k0 + g.escanos); k0 += g.escanos;
+      const votos = votosOrden.flatMap((k) => Array(g.votos[k] || 0).fill(k));
+      if (votos.length !== suyos.length) throw new Error(`${g.corto}: ${votos.length} votos y ${suyos.length} escaños`);
+      suyos.forEach((e, k) => { e.grupo = g.corto; e.voto = votos[k]; });
+    });
+  });
+
+  const rad = Math.min(dr * 0.36, 21);
+  const nubes = escanos.map((e) => `<path d="${celda(cx, cy, e)}" fill="${porNombre[e.grupo].color}" stroke="${porNombre[e.grupo].color}" stroke-width="1.5"/>`).join('');
+  const bolas = escanos.map((e) => icono(e.voto, e.x, e.y, rad, '#1C1C1C')).join('');
+
+  const t = d.totales;
+  const tot = (k, n, lado) => {
+    const ic = `<svg width="56" height="56" viewBox="-28 -28 56 56">${icono(k, 0, 0, 24, '#1C1C1C')}</svg>`;
+    const tx = `<div><b>${n}</b><span>${VOTOS.find((v) => v.k === k).txt}</span></div>`;
+    return `<div class="tot ${lado === 'izq' ? 'tot-i' : 'tot-d'}">${lado === 'izq' ? tx + ic : ic + tx}</div>`;
+  };
+
+  lz.innerHTML = `
+    ${sello(d)}
+    <svg class="capa" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+      <defs><filter id="suave" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="0.8"/></filter></defs>
+      <g opacity=".62" filter="url(#suave)">${nubes}</g>
+      ${bolas}
+    </svg>
+    <div class="totales t-izq">${tot('si', t.si, 'izq')}${tot('abs', t.abs, 'izq')}</div>
+    <div class="totales t-der">${tot('no', t.no, 'der')}${tot('nv', t.nv, 'der')}</div>
+    <div class="izq">
+      ${cabecera(d)}
+      <div class="titulo">¿Quién ha votado qué?</div>
+      <div class="tema">${d.tema}</div>
+      ${etiqueta(d)}
+    </div>
+    <div class="der"><div class="der-titulo">Grupos parlamentarios · escaños</div>
+    <div class="der-grupos">${d.grupos.map((g) => `<div><i class="chip" style="background:${g.color}"></i><b>${g.corto}</b>&nbsp;${g.escanos}</div>`).join('')}</div></div>
+    <div class="pie-izq">Fuente: congreso.es · ${d.referencia}</div>
+    <div class="pie-der">Divulgación independiente, no oficial</div>`;
+}
+
+
+// ---------- Infografía 3: resultado sin detalle por grupos ----------
+// Votaciones secretas (p. ej. suplicatorios) o por asentimiento: el Congreso no publica el voto de
+// cada diputado. Se muestra el total en una cuadrícula de 350 (no un hemiciclo, para no sugerir grupos).
+function pintarResultado(d) {
+  document.getElementById('doble').style.display = 'none';
+  const lz = document.getElementById('lienzo'); lz.style.display = 'flex';
+  const t = d.totales;
+  const candado = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1F4E5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>`;
+  const texto = d.asentimiento
+    ? 'Aprobada <b>por asentimiento</b>: nadie pidió votar en contra, así que no hubo votación con recuento.'
+    : '<b>Votación secreta.</b> El Congreso solo publica el resultado total, no lo que ha votado cada diputado ni cada grupo.';
+  let cuerpo = '';
+  if (!d.asentimiento) {
+    const total = d.escanos_total || 350, cols = 25, sep = 33, rad = sep * 0.4;
+    const filas = Math.ceil(total / cols);
+    const lista = ['si', 'abs', 'no', 'nv'].flatMap((k) => Array(t[k] || 0).fill(k));
+    while (lista.length < total) lista.push('vacante');
+    const bolas = lista.map((k, i) => {
+      const x = sep / 2 + (i % cols) * sep, y = sep / 2 + Math.floor(i / cols) * sep;
+      return k === 'vacante' ? `<circle cx="${x}" cy="${y}" r="${rad * 0.4}" fill="#DDE3E6"/>` : icono(k, x, y, rad, '#1C1C1C');
+    }).join('');
+    const tot = (k) => `<div class="tot"><svg width="56" height="56" viewBox="-28 -28 56 56">${icono(k, 0, 0, 24, '#1C1C1C')}</svg><div><b>${t[k]}</b><span>${VOTOS.find((v) => v.k === k).txt}</span></div></div>`;
+    cuerpo = `
+      <svg class="cuadricula" style="align-self:center" width="${cols * sep}" height="${filas * sep}" viewBox="0 0 ${cols * sep} ${filas * sep}">${bolas}</svg>
+      <div class="totales-fila">${tot('si')}${tot('no')}${tot('abs')}${tot('nv')}</div>`;
+  }
+  lz.innerHTML = `
+    ${cabecera(d)}${sello(d)}
+    <div class="titulo">Resultado de la votación</div>
+    <div class="tema">${d.tema}</div>
+    <div style="margin-top:26px">${etiqueta(d)}</div>
+    <div class="aviso">${candado}<div>${texto}</div></div>
+    ${cuerpo}
+    <div class="pie"><span>Fuente: congreso.es · ${d.referencia}</span><span>Divulgación independiente, no oficial</span></div>`;
+}
+
+window.pintar = (d, tipo, plano) => {
+  if (tipo === 'grupos') pintarGrupos(d);
+  else if (tipo === 'resultado') pintarResultado(d);
+  else pintarHemicicloDoble(d, plano);
+};
+</script>
+</body>
+</html>
