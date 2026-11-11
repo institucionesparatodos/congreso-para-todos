@@ -31,12 +31,14 @@ jobs:
         with:
           node-version: 22
 
-      - name: Instalar Playwright y Chromium
-        run: |
-          npm install --no-save playwright
-          npx playwright install --with-deps chromium
+      - name: Instalar Playwright
+        timeout-minutes: 5
+        run: npm install --no-save playwright
 
       - name: Generar las infografías
+        timeout-minutes: 10
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
         run: node scripts/render.mjs
 
       - name: Guardar las imágenes en el repositorio
