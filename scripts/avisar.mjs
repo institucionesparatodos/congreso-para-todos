@@ -14,6 +14,7 @@ for (const lote of lotes) {
   if (!lote.resume_url) continue;
   try {
     const respuesta = await fetch(lote.resume_url, {
+      signal: AbortSignal.timeout(20000),
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ lote_id: lote.lote_id, votaciones: lote.votaciones }),
