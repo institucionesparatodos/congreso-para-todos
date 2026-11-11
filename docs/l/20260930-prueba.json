@@ -1,0 +1,207 @@
+{
+  "lote_id": "20260930-prueba",
+  "votaciones": [
+    {
+      "id": "S202-V001",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:21:57.259Z"
+    },
+    {
+      "id": "S202-V002",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:21:58.095Z"
+    },
+    {
+      "id": "S202-V003",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:21:58.914Z"
+    },
+    {
+      "id": "S202-V004",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:21:59.681Z"
+    },
+    {
+      "id": "S202-V005",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:00.472Z"
+    },
+    {
+      "id": "S202-V006",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:01.231Z"
+    },
+    {
+      "id": "S202-V007",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:02.021Z"
+    },
+    {
+      "id": "S202-V008",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:02.778Z"
+    },
+    {
+      "id": "S202-V009",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:03.574Z"
+    },
+    {
+      "id": "S202-V010",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:04.362Z"
+    },
+    {
+      "id": "S202-V011",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:05.163Z"
+    },
+    {
+      "id": "S202-V012",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:05.930Z"
+    },
+    {
+      "id": "S202-V013",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:06.747Z"
+    },
+    {
+      "id": "S202-V014",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:07.657Z"
+    },
+    {
+      "id": "S202-V015",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:08.481Z"
+    },
+    {
+      "id": "S202-V016",
+      "plantilla": "nominal",
+      "imagenes": [
+        "01-grupos.jpg",
+        "02-hemiciclo-a.jpg",
+        "03-hemiciclo-b.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:09.279Z"
+    },
+    {
+      "id": "S202-V021",
+      "plantilla": "resultado",
+      "imagenes": [
+        "01-resultado.jpg"
+      ],
+      "hoja": "hoja.jpg",
+      "avisos": [],
+      "generado": "2026-11-11T16:22:09.781Z"
+    }
+  ]
+}
