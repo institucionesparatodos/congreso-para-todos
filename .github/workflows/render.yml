@@ -13,13 +13,16 @@ permissions:
   pages: write
   id-token: write
 
+# Nunca dos ejecuciones a la vez (para que no se pisen al guardar las imágenes).
+# Si una ejecución se queda atascada sin poder cancelarse, cambiar este nombre la deja atrás.
 concurrency:
-  group: generar-imagenes
+  group: infografias-v2
   cancel-in-progress: false
 
 jobs:
   generar:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     environment:
       name: github-pages
     steps:
@@ -60,9 +63,11 @@ jobs:
           path: docs
 
       - name: Publicar en GitHub Pages
+        timeout-minutes: 5
         uses: actions/deploy-pages@v4
 
       - name: Avisar a n8n
+        timeout-minutes: 3
         run: |
           sleep 20
           node scripts/avisar.mjs
