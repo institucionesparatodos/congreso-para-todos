@@ -1,0 +1,3167 @@
+{
+ "lote_id": "20260930-211851",
+ "resume_url": "https://jordiborbon.app.n8n.cloud/webhook-waiting/59?signature=aeec919c64fcd32ea87d4f34b8e5c1ad5ecfb4360a061d0ec2de0a9a2541fc32",
+ "votaciones": [
+  {
+   "id": "S202-V001",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 1",
+    "tema": "Propuesta del PP: garantizar la correcta implementación del Pacto Europeo sobre Migración y Asilo en España",
+    "resultado": "Rechazada",
+    "totales": {
+     "si": 137,
+     "no": 175,
+     "abs": 34,
+     "nv": 4
+    },
+    "mayoria": {
+     "umbral": 156,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 136,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 0,
+       "no": 120,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 32,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 0,
+       "no": 25,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 1,
+       "no": 6,
+       "abs": 2,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 0,
+         "no": 4,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 7,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 5,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Proposición no de ley",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Proposición no de Ley del Grupo Parlamentario Popular en el Congreso, para garantizar la correcta implementación del Pacto Europeo sobre Migración y Asilo en España.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion001/VOT_20260930153547.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V002",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 2",
+    "tema": "Propuesta del PSOE: la puesta en marcha de un instrumento europeo excepcional de contribución sobre los beneficios…",
+    "resultado": "Rechazada",
+    "totales": {
+     "si": 166,
+     "no": 176,
+     "abs": 5,
+     "nv": 3
+    },
+    "mayoria": {
+     "umbral": 171,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 1,
+       "no": 136,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 120,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 32,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 25,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 7,
+       "no": 2,
+       "abs": 0,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 4,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 7,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 6,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 5,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Proposición no de ley",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Proposición no de Ley del Grupo Parlamentario Socialista, para la puesta en marcha de un instrumento europeo excepcional de contribución sobre los beneficios extraordinarios de las empresas energéticas.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion002/VOT_20260930153550.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V003",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 3",
+    "tema": "Moción del Grupo Mixto: las medidas que va a adoptar el Gobierno para evitar las subidas desorbitadas de los precios… (Punto 1)",
+    "resultado": "Rechazada",
+    "totales": {
+     "si": 44,
+     "no": 181,
+     "abs": 122,
+     "nv": 3
+    },
+    "mayoria": {
+     "umbral": 112.5,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 0,
+       "no": 136,
+       "abs": 1,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 120,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 32,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 25,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 6,
+       "no": 2,
+       "abs": 1,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 4,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 7,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 6,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 5,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Moción",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Moción consecuencia de interpelación urgente del Grupo Parlamentario Mixto (Sra. Belarra Urteaga), relativa a las medidas que va a adoptar el Gobierno para evitar las subidas desorbitadas de los precios de los productos energéticos y su impacto directo sobre el coste de la vida de las familias.",
+   "parte": "Votación separada por puntos. Punto 1.",
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion003/VOT_20260930153552.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V004",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 4",
+    "tema": "Moción del Grupo Mixto: las medidas que va a adoptar el Gobierno para evitar las subidas desorbitadas de los precios… (Punto 2)",
+    "resultado": "Rechazada",
+    "totales": {
+     "si": 166,
+     "no": 179,
+     "abs": 0,
+     "nv": 5
+    },
+    "mayoria": {
+     "umbral": 172.5,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 0,
+       "no": 135,
+       "abs": 0,
+       "nv": 2
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 120,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 32,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 25,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 8,
+       "no": 1,
+       "abs": 0,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 4,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 7,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 6,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 5,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Moción",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Moción consecuencia de interpelación urgente del Grupo Parlamentario Mixto (Sra. Belarra Urteaga), relativa a las medidas que va a adoptar el Gobierno para evitar las subidas desorbitadas de los precios de los productos energéticos y su impacto directo sobre el coste de la vida de las familias.",
+   "parte": "Votación separada por puntos. Punto 2.",
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion004/VOT_20260930153555.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V005",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 5",
+    "tema": "Moción del Grupo Mixto: las medidas que va a adoptar el Gobierno para evitar las subidas desorbitadas de los precios… (Punto 3)",
+    "resultado": "Rechazada",
+    "totales": {
+     "si": 39,
+     "no": 181,
+     "abs": 126,
+     "nv": 4
+    },
+    "mayoria": {
+     "umbral": 110,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 1,
+       "no": 135,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 120,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 32,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 25,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 6,
+       "no": 3,
+       "abs": 0,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 4,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 7,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 5,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Moción",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Moción consecuencia de interpelación urgente del Grupo Parlamentario Mixto (Sra. Belarra Urteaga), relativa a las medidas que va a adoptar el Gobierno para evitar las subidas desorbitadas de los precios de los productos energéticos y su impacto directo sobre el coste de la vida de las familias.",
+   "parte": "Votación separada por puntos. Punto 3.",
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion005/VOT_20260930153557.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V006",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 6",
+    "tema": "Moción de VOX: las medidas adoptadas en relación con la situación de interés para la seguridad nacional en la ciudad…",
+    "resultado": "Rechazada",
+    "totales": {
+     "si": 33,
+     "no": 176,
+     "abs": 138,
+     "nv": 3
+    },
+    "mayoria": {
+     "umbral": 104.5,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 137,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 0,
+       "no": 120,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 32,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 0,
+       "no": 25,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 1,
+       "no": 7,
+       "abs": 1,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 0,
+         "no": 4,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 7,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 5,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Moción",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Moción consecuencia de interpelación urgente del Grupo Parlamentario VOX, sobre las medidas adoptadas en relación con la situación de interés para la seguridad nacional en la ciudad de Ceuta.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion006/VOT_20260930153600.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V007",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 7",
+    "tema": "Moción del PP: la gestión del Ministerio de Defensa durante la reciente crisis en la ciudad de Ceuta (Punto 1, 2 y 4 del primer bloque)",
+    "resultado": "Rechazada",
+    "totales": {
+     "si": 172,
+     "no": 174,
+     "abs": 0,
+     "nv": 4
+    },
+    "mayoria": {
+     "umbral": 173,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 0,
+       "no": 120,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 32,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 0,
+       "no": 24,
+       "abs": 0,
+       "nv": 2
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 3,
+       "no": 6,
+       "abs": 0,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 0,
+         "no": 4,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 7,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 5,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Moción",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Moción consecuencia de interpelación urgente del Grupo Parlamentario Popular en el Congreso, sobre la gestión del Ministerio de Defensa durante la reciente crisis en la ciudad de Ceuta.",
+   "parte": "Votación separada por puntos. Punto 1, 2 y 4 del primer bloque.",
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion007/VOT_20260930153602.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V008",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 8",
+    "tema": "Moción del PP: la gestión del Ministerio de Defensa durante la reciente crisis en la ciudad de Ceuta (Punto 3 del primer bloque)",
+    "resultado": "Aprobada",
+    "totales": {
+     "si": 171,
+     "no": 170,
+     "abs": 6,
+     "nv": 3
+    },
+    "mayoria": {
+     "umbral": 170.5,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 0,
+       "no": 120,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 32,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 0,
+       "no": 25,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 2,
+       "no": 6,
+       "abs": 1,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 0,
+         "no": 4,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 7,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 5,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Moción",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Moción consecuencia de interpelación urgente del Grupo Parlamentario Popular en el Congreso, sobre la gestión del Ministerio de Defensa durante la reciente crisis en la ciudad de Ceuta.",
+   "parte": "Votación separada por puntos. Punto 3 del primer bloque.",
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion008/VOT_20260930153605.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V009",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 9",
+    "tema": "Moción del PP: la gestión del Ministerio de Defensa durante la reciente crisis en la ciudad de Ceuta (Segundo bloque)",
+    "resultado": "Aprobada",
+    "totales": {
+     "si": 172,
+     "no": 170,
+     "abs": 5,
+     "nv": 3
+    },
+    "mayoria": {
+     "umbral": 171,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 0,
+       "no": 120,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 32,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 0,
+       "no": 25,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 3,
+       "no": 6,
+       "abs": 0,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 0,
+         "no": 4,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 7,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 5,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Moción",
+   "interes": "medio",
+   "tipo": "nominal",
+   "texto_expediente": "Moción consecuencia de interpelación urgente del Grupo Parlamentario Popular en el Congreso, sobre la gestión del Ministerio de Defensa durante la reciente crisis en la ciudad de Ceuta.",
+   "parte": "Votación separada por puntos. Segundo bloque.",
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion009/VOT_20260930153607.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V010",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 10",
+    "tema": "Enmienda de VOX para devolver al Gobierno el proyecto de Ley Orgánica de medidas en materia de violencia vicaria",
+    "resultado": "Rechazada",
+    "totales": {
+     "si": 34,
+     "no": 312,
+     "abs": 0,
+     "nv": 4
+    },
+    "mayoria": {
+     "umbral": 173,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 0,
+       "no": 137,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 0,
+       "no": 120,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 32,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 1,
+       "no": 24,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 1,
+       "no": 8,
+       "abs": 0,
+       "nv": 0
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 0,
+         "no": 4,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 7,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 5,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 0,
+       "no": 5,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Enmienda a la totalidad",
+   "interes": "alto",
+   "tipo": "nominal",
+   "texto_expediente": "Votación de la enmienda a la totalidad de devolución al Proyecto de Ley Orgánica de medidas en materia de violencia vicaria, presentada por el Grupo Parlamentario VOX.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion010/VOT_20260930153609.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V011",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 11",
+    "tema": "Acuerdo entre el Reino de España y el Gobierno de Ucrania sobre cooperación técnica y financiera, hecho en Madrid el…",
+    "resultado": "Aprobada",
+    "totales": {
+     "si": 290,
+     "no": 4,
+     "abs": 46,
+     "nv": 10
+    },
+    "mayoria": {
+     "umbral": 147,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 120,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 32,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 19,
+       "no": 0,
+       "abs": 0,
+       "nv": 7
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 2,
+       "no": 4,
+       "abs": 2,
+       "nv": 1
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 0,
+         "no": 4,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 0,
+         "nv": 1
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 7,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 5,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Convenio internacional",
+   "interes": "bajo",
+   "tipo": "nominal",
+   "texto_expediente": "Acuerdo entre el Reino de España y el Gobierno de Ucrania sobre cooperación técnica y financiera, hecho en Madrid el 18 de marzo de 2026.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion011/VOT_20260930153611.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V012",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 12",
+    "tema": "Convenio por el que se establece una Comisión Internacional de Reclamaciones para Ucrania, hecho en La Haya el 16 de…",
+    "resultado": "Aprobada",
+    "totales": {
+     "si": 272,
+     "no": 4,
+     "abs": 63,
+     "nv": 11
+    },
+    "mayoria": {
+     "umbral": 138,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 120,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 32,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 1,
+       "no": 0,
+       "abs": 18,
+       "nv": 7
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 2,
+       "no": 4,
+       "abs": 2,
+       "nv": 1
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 0,
+         "no": 4,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 0,
+         "nv": 1
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 7,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 5,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 5,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Convenio internacional",
+   "interes": "bajo",
+   "tipo": "nominal",
+   "texto_expediente": "Convenio por el que se establece una Comisión Internacional de Reclamaciones para Ucrania, hecho en La Haya el 16 de diciembre de 2025.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion012/VOT_20260930153613.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V013",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 13",
+    "tema": "Acuerdo entre el Reino de España y la República de Uzbekistán sobre exención recíproca de visados para titulares de…",
+    "resultado": "Aprobada",
+    "totales": {
+     "si": 293,
+     "no": 0,
+     "abs": 53,
+     "nv": 4
+    },
+    "mayoria": {
+     "umbral": 146.5,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 120,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 32,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 25,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 6,
+       "no": 0,
+       "abs": 2,
+       "nv": 1
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 4,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 0,
+         "nv": 1
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 7,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 5,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Convenio internacional",
+   "interes": "bajo",
+   "tipo": "nominal",
+   "texto_expediente": "Acuerdo entre el Reino de España y la República de Uzbekistán sobre exención recíproca de visados para titulares de pasaportes diplomáticos, hecho en Madrid el 7 de abril de 2026.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion013/VOT_20260930153615.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V014",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 14",
+    "tema": "Acuerdo sobre Transporte Aéreo entre el Reino de España y la República Federativa de Brasil, hecho en Barcelona el…",
+    "resultado": "Aprobada",
+    "totales": {
+     "si": 293,
+     "no": 32,
+     "abs": 21,
+     "nv": 4
+    },
+    "mayoria": {
+     "umbral": 162.5,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 120,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 32,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 25,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 6,
+       "no": 0,
+       "abs": 2,
+       "nv": 1
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 4,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 0,
+         "nv": 1
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 7,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 5,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Convenio internacional",
+   "interes": "bajo",
+   "tipo": "nominal",
+   "texto_expediente": "Acuerdo sobre Transporte Aéreo entre el Reino de España y la República Federativa de Brasil, hecho en Barcelona el 17 de abril de 2026.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion014/VOT_20260930153616.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V015",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 15",
+    "tema": "Protocolo Adicional a la Convención Iberoamericana de Derechos de los Jóvenes, hecho ad referendum en Cartagena de…",
+    "resultado": "Aprobada",
+    "totales": {
+     "si": 301,
+     "no": 33,
+     "abs": 12,
+     "nv": 4
+    },
+    "mayoria": {
+     "umbral": 167,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 120,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 32,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 25,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 7,
+       "no": 1,
+       "abs": 0,
+       "nv": 1
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 4,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 0,
+         "nv": 1
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 7,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 5,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Convenio internacional",
+   "interes": "bajo",
+   "tipo": "nominal",
+   "texto_expediente": "Protocolo Adicional a la Convención Iberoamericana de Derechos de los Jóvenes, hecho ad referendum en Cartagena de Indias el 25 de octubre de 2016.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion015/VOT_20260930153618.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V016",
+   "plantilla": "nominal",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 16",
+    "tema": "Acuerdo entre el Reino de España y el Reino de Arabia Saudí sobre exención recíproca de visados para titulares de…",
+    "resultado": "Aprobada",
+    "totales": {
+     "si": 293,
+     "no": 14,
+     "abs": 39,
+     "nv": 4
+    },
+    "mayoria": {
+     "umbral": 153.5,
+     "texto": "Mayoría simple: sale adelante si hay más síes que noes"
+    },
+    "grupos": [
+     {
+      "corto": "PP",
+      "color": "#1D84CE",
+      "escanos": 137,
+      "votos": {
+       "si": 137,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PSOE",
+      "color": "#E30613",
+      "escanos": 121,
+      "votos": {
+       "si": 120,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "VOX",
+      "color": "#63BE21",
+      "escanos": 32,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 32,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "SUMAR",
+      "color": "#E51C55",
+      "escanos": 26,
+      "votos": {
+       "si": 25,
+       "no": 0,
+       "abs": 0,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "Mixto",
+      "color": "#8A8A8A",
+      "escanos": 9,
+      "votos": {
+       "si": 6,
+       "no": 1,
+       "abs": 1,
+       "nv": 1
+      },
+      "partidos": [
+       {
+        "corto": "Podemos",
+        "color": "#6B2E7E",
+        "escanos": 4,
+        "votos": {
+         "si": 4,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "BNG",
+        "color": "#7FB2DE",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 0,
+         "nv": 1
+        }
+       },
+       {
+        "corto": "CC",
+        "color": "#F5D000",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Compromís",
+        "color": "#E8892B",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 1,
+         "abs": 0,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "Ortega Smith",
+        "color": "#8A8A8A",
+        "escanos": 1,
+        "votos": {
+         "si": 0,
+         "no": 0,
+         "abs": 1,
+         "nv": 0
+        }
+       },
+       {
+        "corto": "UPN",
+        "color": "#0E3C6E",
+        "escanos": 1,
+        "votos": {
+         "si": 1,
+         "no": 0,
+         "abs": 0,
+         "nv": 0
+        }
+       }
+      ]
+     },
+     {
+      "corto": "ERC",
+      "color": "#FFB232",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 7,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "Junts",
+      "color": "#20C0B2",
+      "escanos": 7,
+      "votos": {
+       "si": 0,
+       "no": 0,
+       "abs": 6,
+       "nv": 1
+      }
+     },
+     {
+      "corto": "EH Bildu",
+      "color": "#B5CF18",
+      "escanos": 6,
+      "votos": {
+       "si": 0,
+       "no": 6,
+       "abs": 0,
+       "nv": 0
+      }
+     },
+     {
+      "corto": "PNV",
+      "color": "#2E8B57",
+      "escanos": 5,
+      "votos": {
+       "si": 5,
+       "no": 0,
+       "abs": 0,
+       "nv": 0
+      }
+     }
+    ]
+   },
+   "categoria": "Convenio internacional",
+   "interes": "bajo",
+   "tipo": "nominal",
+   "texto_expediente": "Acuerdo entre el Reino de España y el Reino de Arabia Saudí sobre exención recíproca de visados para titulares de pasaportes diplomáticos, especiales y de servicio, hecho en Madrid el 13 de mayo de 2026.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion016/VOT_20260930153620.json",
+   "avisos": []
+  },
+  {
+   "id": "S202-V021",
+   "plantilla": "resultado",
+   "datos": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 21",
+    "tema": "Dictamen de la Comisión del Estatuto acerca del suplicatorio formulado en relación con un Sr. Diputado",
+    "resultado": "Aprobada",
+    "asentimiento": false,
+    "escanos_total": 350,
+    "totales": {
+     "si": 340,
+     "no": 0,
+     "abs": 0,
+     "nv": 10
+    }
+   },
+   "categoria": "Suplicatorio",
+   "interes": "alto",
+   "tipo": "sin_detalle",
+   "texto_expediente": "Dictamen de la Comisión del Estatuto acerca del suplicatorio formulado en relación con un Sr. Diputado.",
+   "parte": null,
+   "url_json": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion202/20260930/Votacion021/VOT_20260930153628.json",
+   "avisos": []
+  }
+ ]
+}
