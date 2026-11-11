@@ -1,6 +1,7 @@
 // Genera las infografías de las votaciones a partir de los JSON de la carpeta "datos".
 // Cada JSON es un lote (las votaciones de un día + la dirección para avisar a n8n).
-// Solo procesa las votaciones que todavía no tienen imágenes en "docs/v/<id>/".
+// Procesa cada lote una sola vez (marca en "docs/l/<lote_id>.json") y avisa siempre a n8n.
+// Las votaciones que ya tienen imágenes en "docs/v/<id>/" no se vuelven a generar.
 import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -9,20 +10,22 @@ import { pathToFileURL } from 'node:url';
 const RAIZ = process.cwd();
 const DATOS = path.join(RAIZ, 'datos');
 const SALIDA = path.join(RAIZ, 'docs', 'v');
+const HECHOS = path.join(RAIZ, 'docs', 'l');
 const PLANTILLA = pathToFileURL(path.join(RAIZ, 'plantilla', 'votacion.html')).href;
 const PLANO = JSON.parse(fs.readFileSync(path.join(RAIZ, 'config', 'hemiciclo.json'), 'utf8'));
 const RESULTADO = path.join(RAIZ, 'resultado-lotes.json'); // lo lee avisar.mjs (no se guarda en el repositorio)
 
 const yaGenerado = (id) => fs.existsSync(path.join(SALIDA, id, 'listo.json'));
+const loteHecho = (id) => fs.existsSync(path.join(HECHOS, `${id}.json`));
 
 const lotes = fs
   .readdirSync(DATOS)
   .filter((f) => f.endsWith('.json'))
   .map((f) => JSON.parse(fs.readFileSync(path.join(DATOS, f), 'utf8')))
-  .filter((lote) => Array.isArray(lote.votaciones) && lote.votaciones.some((v) => !yaGenerado(v.id)));
+  .filter((lote) => Array.isArray(lote.votaciones) && lote.lote_id && !loteHecho(lote.lote_id));
 
 if (lotes.length === 0) {
-  console.log('No hay votaciones pendientes.');
+  console.log('No hay lotes pendientes.');
   fs.writeFileSync(RESULTADO, '[]');
   process.exit(0);
 }
@@ -98,6 +101,9 @@ for (const lote of lotes) {
     resumen.votaciones.push(listo);
   }
   resultados.push(resumen);
+  // Marca el lote como hecho (sin la dirección de aviso, que no hace falta guardar)
+  fs.mkdirSync(HECHOS, { recursive: true });
+  fs.writeFileSync(path.join(HECHOS, `${lote.lote_id}.json`), JSON.stringify({ lote_id: lote.lote_id, votaciones: resumen.votaciones }, null, 2));
 }
 
 await navegador.close();
