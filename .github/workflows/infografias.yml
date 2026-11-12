@@ -1,0 +1,59 @@
+name: Generar infografías de votaciones
+
+# Se ejecuta cuando n8n sube un JSON nuevo a la carpeta "datos"
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'datos/**.json'
+  workflow_dispatch: # permite lanzarlo a mano desde la pestaña Actions
+
+permissions:
+  contents: write
+
+# Nunca dos ejecuciones a la vez (para que no se pisen al guardar las imágenes)
+concurrency:
+  group: infografias-v3
+  cancel-in-progress: false
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar Playwright
+        timeout-minutes: 5
+        run: npm install --no-save playwright
+
+      - name: Generar las infografías
+        timeout-minutes: 10
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node scripts/render.mjs
+
+      - name: Guardar las imágenes en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "No hay imágenes nuevas."
+          else
+            git commit -m "Imágenes generadas"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Avisar a n8n
+        timeout-minutes: 3
+        run: |
+          sleep 10
+          node scripts/avisar.mjs
