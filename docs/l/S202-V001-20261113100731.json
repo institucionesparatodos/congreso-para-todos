@@ -1,0 +1,33 @@
+{
+  "lote_id": "S202-V001-20261113100731",
+  "pub_id": "S202-V001-20261113100731",
+  "id": "S202-V001",
+  "imagenes": [
+    {
+      "pagina": "portada",
+      "clave": "portada",
+      "archivo": "01-portada.jpg"
+    },
+    {
+      "pagina": "propone",
+      "clave": "propone-1",
+      "archivo": "02-propone.jpg"
+    },
+    {
+      "pagina": "propone",
+      "clave": "propone-2",
+      "archivo": "03-propone.jpg"
+    },
+    {
+      "pagina": "ahora",
+      "clave": "ahora",
+      "archivo": "04-ahora.jpg"
+    },
+    {
+      "pagina": "fuente",
+      "clave": "fuente",
+      "archivo": "05-fuente.jpg"
+    }
+  ],
+  "avisos": []
+}
