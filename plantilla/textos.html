@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Diapositivas de texto · CONGRESO para todos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Plus+Jakarta+Sans:wght@800&display=block" rel="stylesheet">
+<style>
+  :root {
+    --petroleo: #1F4E5F; --crema: #FAF6EE; --tinta: #1C1C1C; --melocoton: #F2A477; --niebla: #DDE3E6;
+    --aprobada: #2E7D32; --rechazada: #C62828;
+    --titulos: 'Plus Jakarta Sans', Arial, sans-serif; --texto: 'Atkinson Hyperlegible', Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  #lienzo { width: 1080px; height: 1350px; padding: 72px 80px 64px; display: flex; flex-direction: column; position: relative; overflow: hidden;
+    font-family: var(--texto); color: var(--tinta); background: var(--crema); }
+  #lienzo.oscuro { background: var(--petroleo); color: var(--crema); }
+  .cabecera { display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 18px; }
+  .logo svg { width: 64px; height: 64px; }
+  .logo-inst { font-family: var(--titulos); font-weight: 800; font-size: 36px; color: var(--petroleo); line-height: 1; }
+  .logo-para { font-size: 26px; line-height: 1; margin-top: 4px; }
+  .fecha { font-size: 28px; font-weight: 700; color: var(--petroleo); }
+  .oscuro .logo-inst, .oscuro .fecha { color: var(--crema); }
+
+  /* Portada */
+  .antetitulo { margin-top: auto; font-size: 32px; font-weight: 700; color: var(--melocoton); }
+  .titular { font-family: var(--titulos); font-weight: 800; font-size: 80px; line-height: 1.06; letter-spacing: -1px; margin-top: 18px; }
+  .resumen { font-size: 38px; line-height: 1.35; margin-top: 34px; max-width: 880px; }
+  .etiqueta { display: inline-flex; align-items: center; gap: 14px; color: #fff; font-weight: 700; font-size: 42px; padding: 16px 34px; border-radius: 28px; background: var(--aprobada); align-self: flex-start; margin-top: 44px; }
+  .etiqueta.rechazada { background: var(--rechazada); }
+  .desliza { margin-top: auto; padding-top: 40px; font-size: 28px; display: flex; justify-content: space-between; opacity: .9; }
+
+  /* Diapositivas de contenido */
+  .titulo { font-family: var(--titulos); font-weight: 800; font-size: 64px; line-height: 1.08; color: var(--petroleo); margin-top: 72px; }
+  .titulo.segundo { font-size: 52px; margin-top: 64px; }
+  .lista { list-style: none; margin-top: 56px; display: flex; flex-direction: column; gap: 48px; }
+  .lista li { display: grid; grid-template-columns: 72px 1fr; gap: 26px; font-size: 44px; line-height: 1.3; align-items: start; }
+  .lista .n { width: 64px; height: 64px; border-radius: 16px; background: var(--niebla); color: var(--petroleo); font-weight: 700; font-size: 32px; display: flex; align-items: center; justify-content: center; margin-top: -4px; }
+  .nota { margin-top: 36px; font-size: 28px; line-height: 1.35; color: var(--petroleo); }
+  .caja { margin-top: 44px; background: var(--niebla); border-radius: 24px; padding: 40px 44px; font-size: 44px; line-height: 1.35; }
+    .fuentes { margin-top: 48px; display: flex; flex-direction: column; gap: 26px; font-size: 36px; line-height: 1.35; }
+  .fuentes div { background: var(--niebla); border-radius: 24px; padding: 24px 30px; }
+  .fuentes small { display: block; font-size: 24px; color: var(--petroleo); margin-top: 6px; word-break: break-all; }
+  .independiente { margin-top: 56px; font-size: 36px; line-height: 1.4; }
+  .pie { margin-top: auto; padding-top: 18px; display: flex; justify-content: space-between; font-size: 24px; color: var(--petroleo); border-top: 3px solid var(--niebla); }
+  .oscuro .pie { color: var(--crema); border-top-color: rgba(250,246,238,.25); }
+  .sello { position: absolute; top: 0; left: 0; right: 0; text-align: center; background: var(--tinta); color: var(--crema); font-weight: 700; font-size: 22px; padding: 6px 0; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div id="lienzo"></div>
+<script>
+const LOGO = (oscuro) => `<svg viewBox="0 0 64 64"><path d="M10 8h44a8 8 0 0 1 8 8v24a8 8 0 0 1-8 8H26l-12 10v-10h-4a8 8 0 0 1-8-8V16a8 8 0 0 1 8-8z" fill="${oscuro ? '#FAF6EE' : '#1F4E5F'}"/><circle cx="44" cy="28" r="6" fill="#F2A477"/></svg>`;
+const esc = (t) => String(t ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const cabecera = (d, oscuro) => `<div class="cabecera"><div class="logo">${LOGO(oscuro)}<div><div class="logo-inst">CONGRESO</div><div class="logo-para">para todos</div></div></div><div class="fecha">${esc(d.fecha)}</div></div>`;
+const etiqueta = (d) => `<span class="etiqueta ${d.resultado === 'Rechazada' ? 'rechazada' : ''}">${d.resultado === 'Rechazada' ? '✕' : '✓'} ${esc(d.resultado)}${d.parte ? ' (esta parte)' : ''}</span>`;
+const sello = (d) => (d.ejemplo ? `<div class="sello">${esc(d.sello || 'EJEMPLO')}</div>` : '');
+const pie = (d, n) => `<div class="pie"><span>${esc(d.referencia)}</span><span>${n}</span></div>`;
+
+// d = { fecha, referencia, resultado, parte, categoria, titular, en_una_frase, que_propone[], a_quien_afecta,
+//       que_pasa_ahora, fuentes[{nombre, url}], pagina: 'portada' | 'propone' | 'ahora' | 'fuente', desde, hasta, n }
+window.pintar = function (d) {
+  const lz = document.getElementById('lienzo');
+  lz.className = d.pagina === 'portada' ? 'oscuro' : '';
+  if (d.pagina === 'portada') {
+    lz.innerHTML = `${cabecera(d, true)}${sello(d)}
+      <div class="antetitulo">${esc(d.categoria)}</div>
+      <div class="titular">${esc(d.titular)}</div>
+      ${etiqueta(d)}
+      <div class="resumen">${esc(d.en_una_frase)}</div>
+      <div class="desliza"><span>Qué se votó y quién votó qué</span><span>Desliza →</span></div>`;
+  } else if (d.pagina === 'propone') {
+    const items = d.que_propone.slice(d.desde, d.hasta);
+    lz.innerHTML = `${cabecera(d)}${sello(d)}
+      <div class="titulo">${d.desde ? 'Qué se proponía (sigue)' : 'Qué se proponía'}</div>
+      <ul class="lista">${items.map((t, i) => `<li><span class="n">${d.desde + i + 1}</span><span>${esc(t)}</span></li>`).join('')}</ul>
+      ${d.hasta < d.que_propone.length ? '<div class="nota">Sigue en la siguiente →</div>' : ''}
+      ${pie(d, d.n)}`;
+  } else if (d.pagina === 'ahora') {
+    lz.innerHTML = `${cabecera(d)}${sello(d)}
+      <div class="titulo">Qué pasa ahora</div>
+      <div class="caja">${esc(d.que_pasa_ahora)}</div>
+      ${d.a_quien_afecta ? `<div class="titulo segundo">A quién afecta</div><div class="caja">${esc(d.a_quien_afecta)}</div>` : ''}
+      ${pie(d, d.n)}`;
+  } else if (d.pagina === 'fuente') {
+    lz.innerHTML = `${cabecera(d)}${sello(d)}
+      <div class="titulo">Fuentes oficiales</div>
+      <div class="fuentes">${d.fuentes.map((f) => `<div>${esc(f.nombre)}<small>${esc(f.url)}</small></div>`).join('')}</div>
+      <div class="independiente">Divulgación independiente, no oficial. Explicamos lo que se vota en el Congreso de forma clara y neutral, sin posicionarnos.</div>
+      ${pie(d, d.n)}`;
+  }
+};
+</script>
+</body>
+</html>
