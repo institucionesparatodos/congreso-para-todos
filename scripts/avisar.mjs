@@ -1,5 +1,5 @@
-// Avisa a n8n de que las infografías ya están publicadas en GitHub Pages.
-// Llama a la "resume URL" del nodo Wait de n8n que viene en cada lote.
+// Avisa a n8n de que las imágenes ya están en el repositorio.
+// Llama a la "resume URL" del nodo Wait de n8n que viene en cada lote o publicación.
 import fs from 'node:fs';
 
 const ARCHIVO = 'resultado-lotes.json';
@@ -8,19 +8,20 @@ if (!fs.existsSync(ARCHIVO)) {
   process.exit(0);
 }
 
-const lotes = JSON.parse(fs.readFileSync(ARCHIVO, 'utf8'));
+const resultados = JSON.parse(fs.readFileSync(ARCHIVO, 'utf8'));
 
-for (const lote of lotes) {
-  if (!lote.resume_url) continue;
+for (const r of resultados) {
+  if (!r.resume_url) continue;
+  const { resume_url, ...cuerpo } = r;
   try {
-    const respuesta = await fetch(lote.resume_url, {
-      signal: AbortSignal.timeout(20000),
+    const respuesta = await fetch(resume_url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ lote_id: lote.lote_id, votaciones: lote.votaciones }),
+      body: JSON.stringify(cuerpo),
+      signal: AbortSignal.timeout(20000),
     });
-    console.log(`Aviso a n8n (${lote.lote_id}): ${respuesta.status}`);
+    console.log(`Aviso a n8n (${r.lote_id}): ${respuesta.status}`);
   } catch (error) {
-    console.log(`No se pudo avisar a n8n (${lote.lote_id}): ${error.message}`);
+    console.log(`No se pudo avisar a n8n (${r.lote_id}): ${error.message}`);
   }
 }
