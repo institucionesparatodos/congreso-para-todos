@@ -1,0 +1,58 @@
+{
+  "tipo": "publicacion",
+  "pub_id": "S202-V001-20261113100731",
+  "id": "S202-V001",
+  "resume_url": "https://jordiborbon.app.n8n.cloud/webhook-waiting/100?signature=217acd71a1d10cd1183042490749fee79d78e1920289b821c0ef1274e373a4b3",
+  "comun": {
+    "fecha": "30 de septiembre de 2026",
+    "referencia": "Sesión 202 · Votación 1",
+    "resultado": "Rechazada",
+    "parte": null,
+    "categoria": "Proposición no de ley",
+    "titular": "El Congreso rechaza la propuesta del PP sobre el Pacto Europeo de Migración y Asilo",
+    "en_una_frase": "El Congreso vota una proposición no de ley del PP que pide al Gobierno actuar para aplicar bien el Pacto Europeo sobre Migración y Asilo. No sale adelante.",
+    "que_propone": [
+      "Tramitar con urgencia las reformas de leyes y reglamentos necesarias para adaptar el Pacto al ordenamiento jurídico español.",
+      "Enviar a las Cortes Generales un informe sobre cómo va el Plan Nacional de Implementación del Pacto.",
+      "Reforzar de inmediato los recursos humanos, materiales y tecnológicos para aplicar el Pacto.",
+      "Impulsar un plan de coordinación con ayuntamientos y comunidades autónomas, con información permanente y financiación suficiente.",
+      "Garantizar recursos para el triaje (control previo de las personas que llegan) y para los procedimientos de asilo y retorno en frontera.",
+      "Votar a favor del acuerdo provisional sobre el Reglamento de Retornos y garantizar su aplicación desde que entre en vigor."
+    ],
+    "a_quien_afecta": "Al Gobierno de España, al que se pide actuar, y a las administraciones municipales y autonómicas implicadas.",
+    "que_pasa_ahora": "El Congreso no hace esta petición al Gobierno.",
+    "fuentes": [
+      {
+        "nombre": "Diario de Sesiones del Congreso núm. 209, de 30 de septiembre de 2026",
+        "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-209.PDF"
+      },
+      {
+        "nombre": "Boletín Oficial de las Cortes Generales, serie D, núm. 569, de 17 de julio de 2026",
+        "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-569.PDF"
+      }
+    ]
+  },
+  "paginas": [
+    {
+      "pagina": "portada"
+    },
+    {
+      "pagina": "propone",
+      "desde": 0,
+      "hasta": 3,
+      "clave": "propone-1"
+    },
+    {
+      "pagina": "propone",
+      "desde": 3,
+      "hasta": 6,
+      "clave": "propone-2"
+    },
+    {
+      "pagina": "ahora"
+    },
+    {
+      "pagina": "fuente"
+    }
+  ]
+}
