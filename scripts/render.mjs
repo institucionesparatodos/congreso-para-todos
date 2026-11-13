@@ -1,6 +1,7 @@
-// Genera las infografías de las votaciones a partir de los JSON de la carpeta "datos".
-// Cada JSON es un lote (las votaciones de un día + la dirección para avisar a n8n).
-// Procesa cada lote una sola vez (marca en "docs/l/<lote_id>.json") y avisa siempre a n8n.
+// Genera las imágenes a partir de los JSON de la carpeta "datos". Hay dos tipos de JSON:
+//  - Lote (las votaciones de un día): infografías en "docs/v/<id>/".
+//  - Publicación (tipo "publicacion"): diapositivas de texto del carrusel en "docs/p/<pub_id>/".
+// Cada JSON se procesa una sola vez (marca en "docs/l/<lote_id o pub_id>.json") y se avisa a n8n.
 // Las votaciones que ya tienen imágenes en "docs/v/<id>/" no se vuelven a generar.
 import { chromium } from 'playwright';
 import fs from 'node:fs';
@@ -12,20 +13,23 @@ const DATOS = path.join(RAIZ, 'datos');
 const SALIDA = path.join(RAIZ, 'docs', 'v');
 const HECHOS = path.join(RAIZ, 'docs', 'l');
 const PLANTILLA = pathToFileURL(path.join(RAIZ, 'plantilla', 'votacion.html')).href;
+const PLANTILLA_TEXTOS = pathToFileURL(path.join(RAIZ, 'plantilla', 'textos.html')).href;
+const SALIDA_PUB = path.join(RAIZ, 'docs', 'p');
 const PLANO = JSON.parse(fs.readFileSync(path.join(RAIZ, 'config', 'hemiciclo.json'), 'utf8'));
 const RESULTADO = path.join(RAIZ, 'resultado-lotes.json'); // lo lee avisar.mjs (no se guarda en el repositorio)
 
 const yaGenerado = (id) => fs.existsSync(path.join(SALIDA, id, 'listo.json'));
 const loteHecho = (id) => fs.existsSync(path.join(HECHOS, `${id}.json`));
 
-const lotes = fs
+const pendientes = fs
   .readdirSync(DATOS)
   .filter((f) => f.endsWith('.json'))
-  .map((f) => JSON.parse(fs.readFileSync(path.join(DATOS, f), 'utf8')))
-  .filter((lote) => Array.isArray(lote.votaciones) && lote.lote_id && !loteHecho(lote.lote_id));
+  .map((f) => JSON.parse(fs.readFileSync(path.join(DATOS, f), 'utf8')));
+const lotes = pendientes.filter((l) => Array.isArray(l.votaciones) && l.lote_id && !loteHecho(l.lote_id));
+const publicaciones = pendientes.filter((p) => p.tipo === 'publicacion' && p.pub_id && Array.isArray(p.paginas) && !loteHecho(p.pub_id));
 
-if (lotes.length === 0) {
-  console.log('No hay lotes pendientes.');
+if (lotes.length === 0 && publicaciones.length === 0) {
+  console.log('No hay nada pendiente.');
   fs.writeFileSync(RESULTADO, '[]');
   process.exit(0);
 }
@@ -104,6 +108,37 @@ for (const lote of lotes) {
   // Marca el lote como hecho (sin la dirección de aviso, que no hace falta guardar)
   fs.mkdirSync(HECHOS, { recursive: true });
   fs.writeFileSync(path.join(HECHOS, `${lote.lote_id}.json`), JSON.stringify({ lote_id: lote.lote_id, votaciones: resumen.votaciones }, null, 2));
+}
+
+// ---------- Diapositivas de texto de las publicaciones ----------
+if (publicaciones.length) {
+  const textos = await navegador.newPage({ viewport: { width: 1080, height: 1350 }, deviceScaleFactor: 1 });
+  await textos.goto(PLANTILLA_TEXTOS, { waitUntil: 'networkidle' });
+  await textos.evaluate(() => document.fonts.ready);
+  for (const pub of publicaciones) {
+    const carpeta = path.join(SALIDA_PUB, pub.pub_id);
+    fs.mkdirSync(carpeta, { recursive: true });
+    const resumen = { lote_id: pub.pub_id, pub_id: pub.pub_id, id: pub.id, resume_url: pub.resume_url || null, imagenes: [], avisos: [] };
+    try {
+      let n = 0;
+      for (const pagina of pub.paginas) {
+        n++;
+        const nombre = `${String(n).padStart(2, '0')}-${pagina.pagina}.jpg`;
+        await textos.evaluate((d) => window.pintar(d), { ...pub.comun, ...pagina });
+        await textos.evaluate(() => document.fonts.ready);
+        await textos.locator('#lienzo').screenshot({ path: path.join(carpeta, nombre), type: 'jpeg', quality: 92 });
+        resumen.imagenes.push({ pagina: pagina.pagina, clave: pagina.clave || pagina.pagina, archivo: nombre });
+      }
+      console.log(`${pub.pub_id}: ${n} diapositivas`);
+    } catch (error) {
+      resumen.avisos.push(`Error al generar: ${error.message}`);
+      console.log(`${pub.pub_id}: ERROR ${error.message}`);
+    }
+    resultados.push(resumen);
+    fs.mkdirSync(HECHOS, { recursive: true });
+    fs.writeFileSync(path.join(HECHOS, `${pub.pub_id}.json`), JSON.stringify({ ...resumen, resume_url: undefined }, null, 2));
+  }
+  await textos.close();
 }
 
 await navegador.close();
